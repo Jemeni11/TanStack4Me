@@ -1,0 +1,36 @@
+{
+  "editor.defaultFormatter": "oxc.oxc-vscode",
+  "oxc.path.oxfmt": "./node_modules/.bin/oxfmt",
+  "oxc.path.oxlint": "./node_modules/.bin/oxlint",
+  "files.watcherExclude": {
+    "**/routeTree.gen.ts": true
+  },
+  "search.exclude": {
+    "**/routeTree.gen.ts": true
+  },
+  "files.readonlyInclude": {
+    "**/routeTree.gen.ts": true
+  },
+  "tailwindCSS.experimental.configFile": "src/styles.css",
+  "tailwindCSS.classAttributes": [
+    "class",
+    "className"
+  ],
+  "tailwindCSS.experimental.classRegex": [
+    [
+      "cn\\(([^)]*)\\)",
+      "[\"'`]([^\"'`]*).*?[\"'`]"
+    ],
+    [
+      "clsx\\(([^)]*)\\)",
+      "[\"'`]([^\"'`]*).*?[\"'`]"
+    ],
+    [
+      "cva\\(([^)]*)\\)",
+      "[\"'`]([^\"'`]*).*?[\"'`]"
+    ],
+    [
+      "const\\s+\\w*[Cc]lass\\w*\\s*=\\s*[\"'`]([^\"'`]*)[\"'`]"
+    ]
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "semi": false,
+  "singleQuote": true,
+  "trailingComma": "all",
+  "printWidth": 80,
+  "sortPackageJson": false,
+  "sortTailwindcss": {
+    "functions": ["cn"],
+    "stylesheet": "./src/styles.css"
+  },
+  "importOrder": [
+    "^react$",
+    "",
+    "^@tanstack/(.*)$",
+    "",
+    "<BUILTIN_MODULES>",
+    "<THIRD_PARTY_MODULES>",
+    "",
+    "^@(.*)$",
+    "",
+    "^[./]",
+    "^(?!.*[.]css$)[./].*$",
+    ".css$"
+  ],
+  "sortImports": {
+    "customGroups": [
+      {
+        "groupName": "react",
+        "elementNamePattern": ["react"]
+      }
+    ],
+    "groups": [
+      "react",
+      ["value-builtin", "value-external"],
+      "value-internal",
+      ["value-parent", "value-sibling", "value-index"],
+      "type-import",
+      "style",
+      "unknown"
+    ],
+    "newlinesBetween": true
+  },
+  "ignorePatterns": [
+    "logs",
+    "*.log",
+    "npm-debug.log*",
+    "yarn-debug.log*",
+    "yarn-error.log*",
+    "pnpm-debug.log*",
+    "lerna-debug.log*",
+    "node_modules",
+    "dist",
+    "dist-ssr",
+    "*.local",
+    ".vscode/*",
+    "!.vscode/extensions.json",
+    ".idea",
+    ".DS_Store",
+    "*.suo",
+    "*.ntvs*",
+    "*.njsproj",
+    "*.sln",
+    "*.sw?",
+    "diff.txt",
+    "pnpm-lock.yaml",
+    "package-lock.json",
+    "yarn.lock",
+    ".env",
+    ".nitro",
+    ".tanstack",
+    ".wrangler",
+    ".output",
+    ".vinxi",
+    "__unconfig*",
+    "todos.json"
+  ]
+}
