@@ -1,214 +1,149 @@
-Welcome to your new TanStack Start app!
+<a id="readme-top"></a>
 
-# Getting Started
+<br />
+<div align="center">
+  <h3 align="center">TanStack4Me</h3>
 
-To run this application:
+  <p align="center">
+    An opinionated TanStack Start template with React 19, TypeScript, TailwindCSS, and Nitro server.
+    <br />
+    <a href="https://github.com/Jemeni11/TanStack4Me"><strong>Explore the repo »</strong></a>
+    <br />
+  </p>
+</div>
+
+<br />
+
+## Table of Contents
+
+- [Table of Contents](#table-of-contents)
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Scripts](#scripts)
+- [Built With](#built-with)
+- [Contributing](#contributing)
+- [Wait a minute, who are you?](#wait-a-minute-who-are-you)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Introduction
+
+Hey! This is a TanStack Start template with the following installed:
+
+- [TanStack Start](https://tanstack.com/start) - Full-stack React framework
+- [TanStack Router](https://tanstack.com/router) - File-based routing for React
+- [React v19](https://react.dev/)
+- [TypeScript v6](https://www.typescriptlang.org/)
+- [TailwindCSS v4](https://tailwindcss.com/)
+- [Vite v8](https://vite.dev/)
+- [Nitro](https://nitro.build/) - Universal server engine
+- [Oxfmt](https://oxc.rs/) - Rust-powered formatter
+- [Oxlint](https://oxc.rs/) - Rust-powered linter
+- [Husky](https://typicode.github.io/husky/) - Git hooks
+- [React Compiler](https://react.dev/learn/react-compiler)
+- [Lucide React](https://lucide.dev/) - Icon library
+- [Tailwind Merge](https://github.com/dcastil/tailwind-merge) - Merge Tailwind classes
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Features
+
+- ⚡ **File-based routing** with TanStack Router
+- 🔗 **Seamless server/client integration** with TanStack Start server functions
+- 🎨 **TailwindCSS v4** for styling with Vite integration
+- 📱 **Responsive images** with WebP support and color LQIP
+- 🪛 **Rust-powered tooling** with Oxfmt and Oxlint for blazing-fast formatting and linting
+- 🚀 **React Compiler** for automatic optimization
+- 📝 **TypeScript strict mode** with full type safety
+- 🔧 **Nitro server** for universal deployment
+- 🪝 **Husky + Lint-staged** for automated git hooks
+- 🛠️ **SVG as React components** with magical SVG plugin
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Installation
+
+Clone the repository and install dependencies:
 
 ```bash
-pnpm install
+git clone https://github.com/Jemeni11/TanStack4Me.git && cd TanStack4Me && pnpm install
+```
+
+Or use the `Use this template` button on GitHub.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Scripts
+
+Available npm scripts for development and production:
+
+```bash
+# Start development server (port 3000)
 pnpm dev
-```
 
-# Building For Production
-
-To build this application for production:
-
-```bash
+# Build for production
 pnpm build
-```
 
-## Testing
+# Preview production build
+pnpm preview
 
-This project uses [Vitest](https://vitest.dev/) for testing. You can run the tests with:
+# Start production server
+pnpm start
 
-```bash
-pnpm test
-```
-
-## Styling
-
-This project uses [Tailwind CSS](https://tailwindcss.com/) for styling.
-
-### Removing Tailwind CSS
-
-If you prefer not to use Tailwind CSS:
-
-1. Remove the demo pages in `src/routes/demo/`
-2. Replace the Tailwind import in `src/styles.css` with your own styles
-3. Remove `tailwindcss()` from the plugins array in `vite.config.ts`
-4. Uninstall the packages: `pnpm add @tailwindcss/vite tailwindcss --dev`
-
-## Linting & Formatting
-
-This project uses [eslint](https://eslint.org/) and [prettier](https://prettier.io/) for linting and formatting. Eslint is configured using [tanstack/eslint-config](https://tanstack.com/config/latest/docs/eslint). The following scripts are available:
-
-```bash
-pnpm lint
+# Format code
 pnpm format
+
+# Format and fix code
+pnpm format:fix
+
+# Lint code
+pnpm lint
+
+# Lint and fix code
+pnpm lint:fix
+
+# Check formatting and linting
 pnpm check
+
+# Format and lint fixes (shorthand)
+pnpm fix
 ```
 
-## Deploy with Nitro
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This project uses Nitro as a generic server adapter, so it can run on any Node-compatible host.
+## Built With
 
-```bash
-npm run build
-node dist/server/index.mjs
-```
+- [TanStack Start](https://tanstack.com/start)
+- [TanStack Router](https://tanstack.com/router)
+- [React v19](https://react.dev/)
+- [TypeScript v6](https://www.typescriptlang.org/)
+- [TailwindCSS v4](https://tailwindcss.com/)
+- [Vite v8](https://vite.dev/)
+- [Nitro](https://nitro.build/)
+- [Oxfmt & Oxlint](https://oxc.rs/)
+- [Husky](https://typicode.github.io/husky/)
+- [React Compiler](https://react.dev/learn/react-compiler)
 
-The build output is a self-contained Node server. To deploy, push the `dist/` directory to your host (Render, Fly.io, your own VPS, etc.) and run the server command above.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-For host-specific presets (Vercel, Netlify, Cloudflare, AWS Lambda, etc.) and tuning, see https://v3.nitro.build/deploy.
+## Contributing
 
-## Routing
+Contributions are welcome! If you'd like to improve TanStack4Me, please feel free to submit a pull request.
 
-This project uses [TanStack Router](https://tanstack.com/router) with file-based routing. Routes are managed as files in `src/routes`.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Adding A Route
+## Wait a minute, who are you?
 
-To add a new route to your application just add a new file in the `./src/routes` directory.
+Hello there! I'm Emmanuel Jemeni, and I am a Frontend Developer.
 
-TanStack will automatically generate the content of the route file for you.
+You can find me on various platforms:
 
-Now that you have two routes you can use a `Link` component to navigate between them.
+- [LinkedIn](https://www.linkedin.com/in/emmanuel-jemeni)
+- [GitHub](https://github.com/Jemeni11)
+- [Bluesky](https://bsky.app/profile/jemeni11.bsky.social)
+- [Twitter/X](https://twitter.com/Jemeni11_)
 
-### Adding Links
+If you'd like, you can support me on [GitHub Sponsors](https://github.com/sponsors/Jemeni11/) or [Buy Me A Coffee](https://www.buymeacoffee.com/jemeni11).
 
-To use SPA (Single Page Application) navigation you will need to import the `Link` component from `@tanstack/react-router`.
-
-```tsx
-import { Link } from '@tanstack/react-router'
-```
-
-Then anywhere in your JSX you can use it like so:
-
-```tsx
-<Link to="/about">About</Link>
-```
-
-This will create a link that will navigate to the `/about` route.
-
-More information on the `Link` component can be found in the [Link documentation](https://tanstack.com/router/v1/docs/framework/react/api/router/linkComponent).
-
-### Using A Layout
-
-In the File Based Routing setup the layout is located in `src/routes/__root.tsx`. Anything you add to the root route will appear in all the routes. The route content will appear in the JSX where you render `{children}` in the `shellComponent`.
-
-Here is an example layout that includes a header:
-
-```tsx
-import { HeadContent, Scripts, createRootRoute } from '@tanstack/react-router'
-
-export const Route = createRootRoute({
-  head: () => ({
-    meta: [
-      { charSet: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { title: 'My App' },
-    ],
-  }),
-  shellComponent: ({ children }) => (
-    <html lang="en">
-      <head>
-        <HeadContent />
-      </head>
-      <body>
-        <header>
-          <nav>
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-          </nav>
-        </header>
-        {children}
-        <Scripts />
-      </body>
-    </html>
-  ),
-})
-```
-
-More information on layouts can be found in the [Layouts documentation](https://tanstack.com/router/latest/docs/framework/react/guide/routing-concepts#layouts).
-
-## Server Functions
-
-TanStack Start provides server functions that allow you to write server-side code that seamlessly integrates with your client components.
-
-```tsx
-import { createServerFn } from '@tanstack/react-start'
-
-const getServerTime = createServerFn({
-  method: 'GET',
-}).handler(async () => {
-  return new Date().toISOString()
-})
-
-// Use in a component
-function MyComponent() {
-  const [time, setTime] = useState('')
-
-  useEffect(() => {
-    getServerTime().then(setTime)
-  }, [])
-
-  return <div>Server time: {time}</div>
-}
-```
-
-## API Routes
-
-You can create API routes by using the `server` property in your route definitions:
-
-```tsx
-import { createFileRoute } from '@tanstack/react-router'
-import { json } from '@tanstack/react-start'
-
-export const Route = createFileRoute('/api/hello')({
-  server: {
-    handlers: {
-      GET: () => json({ message: 'Hello, World!' }),
-    },
-  },
-})
-```
-
-## Data Fetching
-
-There are multiple ways to fetch data in your application. You can use TanStack Query to fetch data from a server. But you can also use the `loader` functionality built into TanStack Router to load the data for a route before it's rendered.
-
-For example:
-
-```tsx
-import { createFileRoute } from '@tanstack/react-router'
-
-export const Route = createFileRoute('/people')({
-  loader: async () => {
-    const response = await fetch('https://swapi.dev/api/people')
-    return response.json()
-  },
-  component: PeopleComponent,
-})
-
-function PeopleComponent() {
-  const data = Route.useLoaderData()
-  return (
-    <ul>
-      {data.results.map((person) => (
-        <li key={person.name}>{person.name}</li>
-      ))}
-    </ul>
-  )
-}
-```
-
-Loaders simplify your data fetching logic dramatically. Check out more information in the [Loader documentation](https://tanstack.com/router/latest/docs/framework/react/guide/data-loading#loader-parameters).
-
-# Demo files
-
-Files prefixed with `demo` can be safely deleted. They are there to provide a starting point for you to play around with the features you've installed.
-
-# Learn More
-
-You can learn more about all of the offerings from TanStack in the [TanStack documentation](https://tanstack.com).
-
-For TanStack Start specific documentation, visit [TanStack Start](https://tanstack.com/start).
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
