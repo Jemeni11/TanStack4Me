@@ -9,29 +9,20 @@
     "functions": ["cn"],
     "stylesheet": "./src/styles.css"
   },
-  "importOrder": [
-    "^react$",
-    "",
-    "^@tanstack/(.*)$",
-    "",
-    "<BUILTIN_MODULES>",
-    "<THIRD_PARTY_MODULES>",
-    "",
-    "^@(.*)$",
-    "",
-    "^[./]",
-    "^(?!.*[.]css$)[./].*$",
-    ".css$"
-  ],
   "sortImports": {
     "customGroups": [
       {
         "groupName": "react",
-        "elementNamePattern": ["react"]
+        "elementNamePattern": ["react", "react-*", "react-*/*"]
+      },
+      {
+        "groupName": "tanstack",
+        "elementNamePattern": ["@tanstack/*", "@tanstack/*/*"]
       }
     ],
     "groups": [
       "react",
+      "tanstack",
       ["value-builtin", "value-external"],
       "value-internal",
       ["value-parent", "value-sibling", "value-index"],
