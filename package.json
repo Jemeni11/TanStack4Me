@@ -7,12 +7,12 @@
     "build": "vite build",
     "preview": "vite preview",
     "start": "node .output/server/index.mjs",
-    "format": "oxfmt --check .",
-    "format:fix": "oxfmt .",
     "lint": "oxlint",
     "lint:fix": "oxlint --fix",
-    "check": "pnpm format && pnpm lint",
-    "fix": "pnpm format:fix && pnpm lint:fix",
+    "format": "oxfmt --check .",
+    "format:fix": "oxfmt .",
+    "check": "pnpm lint && pnpm format ",
+    "fix": "pnpm lint:fix && pnpm format:fix",
     "prepare": "husky"
   },
   "dependencies": {
