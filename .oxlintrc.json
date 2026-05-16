@@ -126,19 +126,6 @@
         "typescript/triple-slash-reference": "error"
       },
       "jsPlugins": ["@stylistic/eslint-plugin"],
-      "globals": {
-        "XRCompositionLayer": "readonly",
-        "XRCubeLayer": "readonly",
-        "XRCylinderLayer": "readonly",
-        "XREquirectLayer": "readonly",
-        "XRLayerEvent": "readonly",
-        "XRPlane": "readonly",
-        "XRPlaneSet": "readonly",
-        "XRProjectionLayer": "readonly",
-        "XRQuadLayer": "readonly",
-        "XRSubImage": "readonly",
-        "XRWebGLSubImage": "readonly"
-      },
       "env": {
         "es2020": true,
         "browser": true
