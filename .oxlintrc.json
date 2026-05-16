@@ -28,7 +28,8 @@
     "**/snap/**",
     "**/vite.config.*.timestamp-*.*",
     ".oxfmtrc.json",
-    ".lintstagedrc.json"
+    ".lintstagedrc.json",
+    "routeTree.gen.ts"
   ],
   "rules": {},
   "overrides": [
